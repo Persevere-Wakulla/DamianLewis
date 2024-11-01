@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(22, 22, 114, 0.932);
+
+}
+
+.heading {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 85%;
+    border: 4px solid cornflowerblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.keep-score {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: aliceblue;
+}
+
+.in-play {
+    background-color: aliceblue;
+    border: 1rem solid hsl(29, 100%, 50%);
+}
+
+#geo {
+    background-image: url("images/bg-pentagon.svg");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -10px;
+    height: 500px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.image {
+    padding: 20px;
+}
+
+.position {
+    position: absolute;
+}
+
+.icon {
+    width: 65%;
+}
+
+.scissors {
+    border: 1rem solid hsl(39, 89%, 49%);
+}
+
+#scissors {
+    top: 20px;
+    left: 209px;
+}
+
+.rock {
+    border: 1rem solid hsl(349, 71%, 52%);
+}
+
+#rock {
+    bottom: 10px;
+    right: 110px;
+}
+
+.paper {
+    border: 1rem solid hsl(230, 89%, 62%);
+}
+
+#paper {
+    right: 40px;
+    top: 140px;
+}
+
+.lizard {
+    border: 1rem solid hsl(281, 71%, 47%);
+}
+
+#lizard {
+    bottom: 10px;
+    left: 110px;
+}
+
+.spock {
+    padding-left: 10px;
+    border: 1rem solid hsl(162, 77%, 47%);
+}
+
+.spock>img {
+    margin-left: 10px;
+}
+img{
+    width:80px;
+}
+#spock {
+    left: 40px;
+    top: 140px;
+}
+
+.section {
+    /* padding: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin-top: -50px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.the-house,
+.the-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.try-again{
+    text-align: center;
+    color: white;
+}
+.section2 {
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 50px; */
+    /* margin-top: 0px; */
+    margin-bottom: 70px;
+    /* padding-top: -80px; */
+}
+
+.pick {
+    color: aliceblue;
+}
+
+.btn {
+    font-weight: 700;
+    top: 47rem;
+    left: 6.5rem;
+    background: hsl(237, 49%, 15%);
+    border: 3px solid hsl(217, 42%, 79%);
+    font-size: 15px;
+    color: hsl(217, 42%, 79%);
+    margin: 2em;
+    padding: 7px 35px 7px 35px;
+    border-radius: 10px;
+}
+.player-image{
+display: flex;
+justify-content: center;
+
+}
+
+.score {
+    color: hsl(229, 25%, 31%);
+    font-weight: 500px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.score-text {
+    font-family: 10px;
+    color: hsl(229, 64%, 46%);
+}
+
+.who-win {
+    width: 170px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.text-container{
+   display: block;
+    margin: auto;
+}
+
+#player-pic{
+ display: none;
+    width: 160px;
+    /* margin-left: 30px; */
+    border: 1px solid black;
+}
+#angry-comp{
+    display: none;
+    width: 160px;
+    height: 140px;
+    /* margin-left: 30px; */
+    border: 3px solid black;
+    /* padding-top: -40px; */
+}
+.center-pics{
+    position: absolute;
+    top: 160px;
+    left: 195px;
+}
+
+/* .timer {
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: 75px;
+} */
+
+#mypopover {
+    background-image: url("./images/image-rules-bonus.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2rem;
+    border: none;
+    margin: auto;
+    width: 35rem;
+    height: 35rem;
+}
+
+.player{
+    width: 20%;
+    display: none;
+    /* margin-right: 90px; */
+}

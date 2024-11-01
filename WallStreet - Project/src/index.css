@@ -1,0 +1,1584 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box */
+}
+
+/* Root 
+---------------------------------------------------------------------------------*/
+:root {
+    --nav: #003bfc;
+    --body: #016c96;
+    --primary: #0059ff;
+    --secondary: #ffffff;
+    --black: #00000000;
+    --dark-blue: #000014;
+    --delta-green: #00fc0d;
+    --delta-red: #ff0000;
+    --index: #012392;
+    --white: #ffffff;
+    --gray-btn: #1c1c1d;
+    --opacity: rgba(0, 0, 0, 0.308);
+}
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 0 auto;
+}
+
+.h-btn {
+    background-color: #f10000;
+    width: 400px;
+    height: 500px;
+}
+
+/* Tooltip Hover Effect
+------------------------------------------------------------------------------------- */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* RootLayOut 
+-------------------------------------------------------------------------------------*/
+.root-layout {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr 12fr 2fr;
+    color: #0a0068;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    font-size: 1.5rem;
+}
+
+.university {
+    font-weight: 500;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #000014;
+}
+
+.copyright>p {
+    text-align: center;
+    font-size: 15px;
+    padding-top: -20px;
+}
+
+.text-center {
+    font-size: 20px;
+    padding-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+
+.bi-twitter-x:hover {
+    color: #f14bdb5b;
+}
+
+.bi-facebook:hover {
+    color: rgba(125, 133, 247, 0.527);
+}
+
+.bi-instagram:hover {
+    color: rgba(255, 0, 0, 0.342);
+}
+
+.bi-linkedin:hover {
+    color: rgba(255, 255, 0, 0.356);
+}
+
+
+/* Scrollbar
+------------------------------------------------------------------------------ */
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 255, 200);
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 132, 255, 0.342);
+    border: 2px solid rgba(120, 0, 189, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00639c;
+}
+
+
+/* HOME
+-------------------------------------------------------------------------------------------------------------------------------- */
+
+.login-prompt {
+    text-align: center;
+    color: red;
+    font-size: 45px;
+    background-color: #000014;
+    width: 600px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 100px 100px;
+}
+
+.delete-text {
+    font-size: 25px;
+}
+
+/* Delete Btn */
+.delete {
+    border: red 2px solid;
+    background-color: #ff0000;
+    width: 200px;
+    margin-top: 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.lesson-text {
+    font-size: 35px;
+}
+
+.show-lesson-border {
+    width: 600px;
+    border: rgb(99, 99, 99) 2px solid;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 20px;
+
+}
+
+.display-lesson {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.edit {
+    background-color: #00814b;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button {
+    width: 200px;
+    background-color: #000000;
+
+}
+
+.lesson-border {
+    border: #363636 2px solid;
+    border-radius: 5px;
+    text-align: left;
+
+    align-items: flex-start;
+    background: var(--opacity);
+}
+
+.lessons-border {
+    border: #363636 2px solid;
+    border-radius: 5px;
+    background: var(--opacity);
+}
+
+.lesson-width {
+    width: 700px;
+}
+
+.question-width {
+    width: 200px;
+}
+
+.answer-width {
+    width: 200px;
+}
+
+.title-width {
+    width: 200px;
+}
+
+.category-width {
+    width: 200px;
+}
+
+.link-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.show-title {
+    color: #020531;
+}
+
+.move {
+    border: #504f4f 2px solid;
+    width: 700px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.my-1 {
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+}
+
+.my-2 {
+    margin-top: 20px;
+}
+
+.my-4 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.category {
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.big-red-600 {
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    margin-top: -15px;
+}
+
+.table-card-btn {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+a>.box1 {
+    display: inline-block;
+    background-color: #000000;
+    width: 170px;
+    height: 40px;
+    font-size: 30px;
+    margin: 20px;
+
+
+}
+
+.table-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.save-btn {
+    background-color: #035f31;
+    width: 400px;
+    height: 60px;
+}
+
+.p-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.welcome-message {
+    text-align: center;
+}
+
+.flex-test-lessons{
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+input,
+textarea {
+    color: black;
+}
+
+.back-btn {
+    font-size: 30px;
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    background-color: #0c0c0c;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.arrow-btn {
+    /* color: #016c96; */
+    font-size: 35px;
+
+}
+
+.back {
+    font-size: 20px;
+    /* color: #016c96; */
+}
+
+input {
+    width: 400px;
+    height: 40px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+}
+
+.edit-area {
+    background-color: #003bfc;
+}
+
+.edit-btn {
+    width: 400px;
+}
+
+
+/* HOME PAGE
+-----------------------------------------------------------------------------*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--body);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: scroll-y;
+
+}
+
+.home-container {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bi-graph-up-arrow {
+    color: var(--delta-green);
+}
+
+.bi-graph-down-arrow {
+    color: var(--delta-red);
+}
+
+.indexes {
+    display: flex;
+    width: fit-content;
+    gap: 8rem;
+    padding-top: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.index-name {
+    color: var(--index);
+    font-size: 30px;
+}
+
+.big-basket {
+    font-size: 35px;
+}
+
+.delta {
+    font-size: 25px;
+}
+
+.head-text {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.home-cards {
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: minmax(auto, 400px) minmax(auto, 1000px) minmax(auto, 400px);
+    width: 100%;
+}
+
+.left-side-div {
+    grid-column: 1;
+    margin-left: 100px;
+}
+
+.lessons {
+    text-align: center;
+    font-size: 30px;
+    background-color: var(--dark-blue);
+    width: 200px;
+    color: #ffffff;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #00000049;
+    border-bottom: 2px solid white;
+    list-style-type: none;
+}
+
+
+/* .center-div{
+
+} */
+
+.graph-pic {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.pics-size {
+    width: 150px;
+}
+
+
+
+.text {
+    padding: 10px;
+    width: 70%;
+    font-size: 20px;
+    line-height: 25px;
+    background: var(--opacity);
+    margin: 0 auto;
+}
+
+.quote {
+    float: right;
+    width: 50%;
+    margin: 1em 0 0.5em 0.75em;
+    padding-top: .5em;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    font-size: 26px;
+    font-style: italic;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.quote::before {
+    content: "\0201c";
+    font-size: 66px;
+}
+
+.canvas {
+    text-align: center;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 46px;
+}
+
+.text-n-pic {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.trade-platform {
+    margin-top: 30px;
+    width: 400px;
+}
+
+.oppertunity {
+    margin: auto;
+    text-align: justify;
+    max-width: 500px;
+}
+
+.list-2 {
+    margin-top: 20px;
+}
+
+.right-side-div {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.pic-container {
+    width: 100%;
+    background-color: var(--dark-blue);
+    padding-bottom: 30px;
+}
+
+.h3-heading {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+.center-pics {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.pics-size {
+    width: 100%;
+}
+
+
+/* ABOUT PAGE
+------------------------------------------------------------------------------------------------------------- */
+.about-container {
+    display: grid;
+    grid-template-rows: 375px auto;
+}
+
+.about-container-background {
+    background: url(public/wall-street-broker.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1;
+    grid-row: 1;
+    height: 375px;
+}
+
+.trading-class {
+    padding-top: 20px;
+    background-color: #008bfc77;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.invest-time {
+    font-size: 35px;
+    font-weight: 500;
+    width: 370px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.invest-time-2 {
+    font-size: 25px;
+    font-weight: 500;
+    width: 370px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    text-align: center;
+}
+
+.about-file {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 20px;
+    margin: 10px;
+}
+
+.side-by-side {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+
+.about-title {
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+
+.sign {
+    width: 170px;
+    padding-bottom: 20px;
+}
+
+.sign-1 {
+    width: 170px;
+    padding-bottom: 20px;
+}
+
+.chart-pic {
+    float: right;
+    margin: 0.25em 0.25em 0.25em .75em;
+    width: 262px;
+
+}
+
+
+.bull-pic {
+    float: right;
+    margin: 0.25em 0.25em 0.25em 0.75em;
+    width: 188px;
+}
+
+.wall-street-pic {
+    float: right;
+    margin: 0.25em 0.25em 0.25em 0.75em;
+}
+
+.univer {
+    color: rgb(255, 217, 0);
+    font-size: 35px;
+    border-bottom: 2px solid rgb(255, 217, 0);
+}
+
+.about-text {
+    background: var(--opacity);
+    padding: 10px;
+}
+
+.para-one {
+    text-align: justify;
+}
+
+
+/* Page Content
+----------------------------------------------------------------------------------------------- */
+
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------
+End Of Page Content */
+
+
+
+.list:hover {
+    color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.75s;
+}
+
+
+
+
+
+
+
+
+
+.first-img {
+    width: 400px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+.bottom-btn {
+    display: block;
+    margin: 2rem auto;
+    /* background-color: var(--dark-blue); */
+}
+
+/* About Page
+---------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Lesson Page 
+-------------------------------------------------------------------------*/
+.box {
+    /* background-color: rgb(77, 77, 77); */
+    width: 50px;
+    height: 35px;
+    text-align: center;
+
+
+}
+
+.info {
+    background-color: #173599;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.trash {
+    background-color: rgb(224, 1, 1);
+    text-decoration: none;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3px;
+
+}
+
+.edit {
+    background-color: rgb(0, 126, 28);
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3px;
+
+
+
+}
+
+.pop-up {
+    background-color: rgb(101, 1, 126);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3px;
+
+}
+
+.thumbs-up {
+    border: #5e5e5e 2px solid;
+    border-radius: 5px;
+}
+
+.thumbs-down {
+    border: #5e5e5e 2px solid;
+    border-radius: 5px;
+}
+
+.category-model {
+    color: #000000;
+}
+
+.ex {
+    margin-left: 650px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.show-lesson {
+    background-color: #68000000;
+    font-size: 35px;
+}
+
+.create-lesson-header {
+    background-color: #00497a;
+}
+
+.back {
+    background-color: #68000000;
+}
+
+.test {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Create Lesson 
+-------------------------------------------------------------------------------------*/
+.create-container {
+    border: rgb(78, 78, 78) 2px solid;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+
+/* User Home
+-------------------------------------------------------------------------------------- */
+li {
+    /* margin-left: 20px */
+}
+
+.choose-lessons li {
+    /* display: flex;
+    justify-content: space-between; */
+    /* list-style-type: none; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #00000049;
+    border-bottom: 2px solid white;
+    list-style-type: none;
+
+}
+.user-lessons{
+    width: 200px;
+    text-align: center;
+    margin-left: 30px;
+    /* background: #003bfc; */
+    /* background-color: #000014; */
+}
+.user-nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 20px;
+}
+.test{
+    margin-left: 40px ;
+}
+.user-nav>a.active {
+    font-size: 18px;
+    background-color: red;
+}
+
+
+.user-nav {
+    border-bottom: 2px solid red;
+    margin: auto;
+
+}
+.user-nav a:active{
+    color: red;
+}
+
+.user-home-text {
+    font-size: 20px;
+    width: 400px;
+    margin: auto;
+    text-align: justify;
+}
+
+.platform {
+    width: 400px;
+}
+
+.class-pics {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.user-home {
+    margin-top: 40px;
+}
+
+.welcome-message {
+    margin-bottom: 40px;
+}
+
+
+
+
+
+/* About Page 
+--------------------------------------------------------------------------------------*/
+
+.about-header {
+    text-align: center;
+    font-size: 36px;
+    margin: -200px;
+}
+
+.wall-street-sign {
+    width: 250px;
+}
+
+.flex-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.color {
+    color: rgb(3, 11, 46);
+    font-weight: 900;
+}
+
+.out-door {
+    width: 400px;
+    padding: 20px;
+}
+
+.line-graph {
+    width: 70%;
+}
+
+.deco {
+    width: 400px;
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+}
+
+.abt::first-letter {
+    float: left;
+    padding-top: 0px;
+    padding-right: 8px;
+    font-size: 3em;
+    line-height: 49px;
+    color: var(--white);
+}
+
+button {
+    font-size: 25px;
+    width: 50px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--dark-blue);
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 20px 0;
+}
+
+header {
+    border-bottom: 2px solid var(--primary);
+    position: sticky;
+    top: 0;
+    background-color: var(--body);
+
+}
+
+header {
+    margin-bottom: 55px;
+}
+
+
+
+header nav a {
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+}
+
+header nav a.active {
+    background-color: var(--primary);
+}
+
+/* LogIn layout 
+-------------------------------------------------------------------*/
+.login-btn {
+    background-color: var(--gray-btn);
+    margin-bottom: -5px;
+    color: #ffffff;
+    width: 100px;
+    position: absolute;
+    border: 2px solid var(--primary);
+    bottom: 1rem;
+    left: 5rem;
+}
+
+.sign-up-tag {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.guest-btn {
+    color: #ebecf0;
+    border: 2px solid var(--primary);
+    background-color: var(--gray-btn);
+    width: 100px;
+    position: absolute;
+    margin-bottom: -5px;
+    bottom: 1rem;
+    left: 5rem;
+}
+
+
+
+.hover-btn:hover {
+    background-color: #00814b;
+    border: 2px solid rgb(180, 180, 180);
+    transition-duration: 0.5s;
+}
+
+.login-header {
+    background-color: #003bfc;
+    padding-top: 62px;
+    margin-left: 5px;
+}
+
+.signup-layout nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.signup-layout nav a {
+    padding: 10px;
+    border: 2px solid rgba(11, 30, 139, 0.63);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.signup-layout nav a.active {
+    border: 2px solid rgb(12, 143, 0);
+    color: #0f0e4e;
+    font-weight: 800;
+}
+
+/* Login 
+--------------------------------------------------------------------------------------*/
+
+/* SIGN UP 
+--------------------------------------------------------------------------------------*/
+.submit-btn {
+    background-color: var(--gray-btn);
+    border: 2px solid var(--primary);
+    position: absolute;
+    color: #ffffff;
+    width: 100px;
+    bottom: 1rem;
+    left: 5rem;
+    margin-bottom: -5px;
+}
+
+.contact {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #1c1c1d;
+}
+
+.contact-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #1c1c1d;
+}
+
+.eyes {
+    display: flex;
+    gap: 20px;
+
+}
+
+#eye {
+    cursor: pointer;
+}
+
+.card-size {
+    width: 50px;
+    font-size: 40px;
+}
+
+/* Lessons 
+--------------------------------------------------------------------------*/
+.thumbs-down {
+    font-size: 68px;
+    transform: rotate(90deg);
+    display: none;
+}
+
+.thumbs-up {
+    font-size: 68px;
+    transform: rotate(270deg);
+    display: none;
+}
+
+.answer {
+    display: flex;
+    align-items: end;
+    width: 345px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: wheat;
+    margin-bottom: 20px;
+    color: #000014;
+}
+
+.lesson-page {
+    text-align: center;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0059ff;
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.top-login {
+    display: flex;
+    align-items: end;
+}
+
+.wrapper {
+    width: 400px;
+    height: 420px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #1c1c1d;
+}
+
+.guest {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 40px;
+}
+
+.input-tag {
+    width: 260px;
+    height: 30px;
+}
+
+.check-box {
+    display: flex;
+    width: 100px;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.item {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.212);
+    background-size: 1000px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+span {
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/* FOOTER
+------------------------------------------------------------------------------------------- */
+footer {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+.text {
+    padding: 10px;
+    text-align: justify;
+    width: 90%;
+    font-size: 20px;
+    line-height: 25px;
+    background: var(--opacity);
+    margin: 0 auto;
+}
+
+/*-------------------------------------------------------------------------------------------
+ End Of Footer */
+
+
+
+/* Home Page
+--------------------------------------------------------------------------- */
+@media(max-width: 800px) {
+    main {
+        width: 100vw;
+    }
+
+    .graph-pic {
+        width: 100%;
+    }
+
+    .indexes {
+        display: flex;
+        gap: 60px;
+    }
+
+    .quote {
+        float: right;
+        margin: 1.25em 0 1em .25em;
+        padding-top: .5em;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .quote::before {
+        content: "\0201c";
+        font-size: 36px;
+    }
+
+    .text-n-pic {
+        display: block;
+    }
+
+    .list-2 {
+        width: 350px;
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+
+    .sub-title {
+        display: none;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .left-side-div {
+        margin-left: 0;
+    }
+
+    .trade-platform {
+        width: 350px;
+    }
+
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        font-size: 16px;
+        height: 40px;
+        width: 200px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #00000049;
+        border-bottom: 2px solid white;
+        list-style-type: none;
+
+    }
+
+    /* About Us 
+    ----------------------------------------------------------------------------*/
+    .invest-time {
+        font-size: 35px;
+        font-weight: 500;
+        width: 370px;
+        margin: auto;
+    }
+
+    .invest-time-2 {
+        font-size: 25px;
+        font-weight: 500;
+        width: 370px;
+        margin: auto
+    }
+
+    .about-file {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .para-three {
+        padding-bottom: 30px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .side-by-side {
+        text-align: center;
+
+    }
+
+    .sign-1,
+    .sign {
+        width: 200px;
+        padding-bottom: 0px;
+        margin-top: 15px;
+    }
+
+    .wall-street-pic {
+        margin: 10px 10px 1px 10px;
+    }
+
+    .chart-pic {
+        margin: 0;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .bull-pic {
+
+        margin: 10px 5px 1px 10px;
+    }
+
+    .about-title-1,
+    .about-title-2,
+    .about-title-3 {
+        font-size: 36px;
+    }
+
+    /* Log In
+    ----------------------------------------------------------------------------*/
+
+
+    /* Help */
+
+
+
+}
+
+/* Log In
+---------------------------------------------------------------------------------------------- */
+
+/* Abount
+---------------------------------------------------------------------------------------------- */
+
+
+
+/* Home
+------------------------------------------------------------------------------*/
+@media(max-width: 375px) {
+
+    .indexes {
+        gap: 80px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .sub-title {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .list-2 {
+        margin: 0 auto;
+    }
+
+    .indexes {
+        display: flex;
+        gap: 60px;
+    }
+
+
+
+    /* About Us 
+    ------------------------------------------------------------------------------*/
+    .nav-links {
+        display: none;
+    }
+
+    header {
+        border-bottom: 0px;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+
+    .university {
+        display: none;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    .wall-street-pic {
+        width: 60%;
+    }
+
+    .chart-pic {
+        width: 60%;
+    }
+
+    .bull-pic {
+        width: 50%;
+    }
+
+    .invest-time {
+        text-align: center;
+    }
+
+    /* Log In 
+-------------------------------------------------------------------------------- */
+
+}

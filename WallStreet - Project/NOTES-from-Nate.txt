@@ -1,0 +1,14 @@
+It may be a good idea to add a new piece to the Login Schema
+
+lessons: [
+    {
+        id, 
+    score(number),
+    date,
+    attempts
+    }
+]
+
+keep track of user progress 
+referenced when logging in so the incomplete are shown on top?
+completed either not rendered or at bottom

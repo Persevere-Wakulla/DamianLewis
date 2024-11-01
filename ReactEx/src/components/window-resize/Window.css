@@ -1,0 +1,45 @@
+.containerOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 870px;
+}
+
+.containerTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 650px;
+    background-color: rgb(33, 2, 173);
+}
+
+.containerThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(2, 94, 173);
+}
+
+.header{
+    color: aliceblue;
+    font-size: 36px;
+    margin-top: -60px;
+}
+
+h1 {
+    color: rgb(33, 2, 173);
+    text-align: center;
+}
+
+.para {
+    color: rgb(33, 2, 173);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+
+}

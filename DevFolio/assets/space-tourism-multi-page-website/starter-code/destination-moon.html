@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./destination.css">
+</head>
+
+<body>
+    <div class="flex-logo">
+      <div>
+        <img class="logo" src="assets/shared/logo.svg" alt="logo">
+      </div>
+      <div>
+        <div class="position">
+          <ul class="nav">
+            <li><a href="index.html">00 Home</a></li>
+            <li><a class="selected" href="destination-moon.html">01 Destination</a></li>
+            <li><a href="crew-commander.html">02 Crew</a></li>
+            <li><a href="technology-capsule.html">03 Technology</a></li>
+          </ul>
+        </div>
+        <img id="burger" class="icon" src="assets/shared/icon-hamburger.svg" alt="icon-hamburger">
+        <img id="close" class="close" src="assets/shared/icon-close.svg" alt="icon-close">
+      </div>
+    </div>
+    <section id="split-flex" class="split-flex">
+      <div class="left-side">
+        <h2 class="heading"><span>01</span> PICK YOUR DESTINATION</h2>
+        <div id="pic" class="img-flex">
+          <img id="image" src="assets/destination/image-moon.png" alt="moon" width="50%">
+        </div>
+      </div>
+      <div class="right-side">
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="flex-moon">
+            <h3 id="moon" class="moon1">MOON</h3>
+            <h3 id="mars" class="moon1">MARS</h3>
+            <h3 id="europa" class="moon1">EUROPA</h3>
+            <h3 id="titan" class="moon1">TITAN</h3>
+          </div>
+          <h1 id="title" class="moon">MOON</h1>
+          <p id="para-1" class="para-1">See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+              regain perspective and come back refreshed. While you’re there, take in some history
+              by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        </div>
+        <hr>
+        <section class="flex-foot">
+          <div>
+            <p class="title">AVG. DISTANCE</p>
+            <h2 id="distance" class="size">384,400 km</h2>
+          </div>
+          <div>
+            <p class="title">EST. TRAVEL TIME</p>
+            <h2 id="time" class="size">3 days</h2>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  <script src="home.js"></script>
+</body>
+
+</html>

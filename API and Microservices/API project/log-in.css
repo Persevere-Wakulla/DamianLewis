@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(227, 227, 228);
+}
+form{
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-bottom: 10px;
+}
+.logo{
+    
+}
+img{
+    transition: all 2s;
+}
+.logo{
+    border-radius: 50%;
+}
+.header{
+    text-align: center;
+    color: rgba(190, 26, 20, 0.959);
+}
+.feildset{
+    max-width: 300px;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-bar{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    background-color: rgb(190, 190, 190);
+    height: 40px;
+ 
+}
+.truck{
+    background-color: rgb(190, 190, 190);
+}
+.fieldset{
+    height: 120px;
+}
+.input{
+    height: 20px;
+}
+#btn{
+    color: white;
+    font-weight: 600;
+}
+
+button{
+    background-color: #007bb5;
+    width: 240px;
+    height: 30px;
+    border-style: none;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <section class="outter-body">
+
+        <section class="body game-container">
+            <h1>😎Color Codes😎</h1>
+            <h3>What color is this?</h3>
+            <div class="flex">
+                <div class="time">Time left: <div id="timer">15</div>s</div>
+                <div class="score">Score: <div id="score">0</div></div>
+            </div>
+            <p id="hex-color"></p>
+            <div id="choices">
+                <span id="0"></span>
+                <span id="1"></span>
+                <span id="2"></span>
+                <span id="3"></span>
+            </div>
+            <p id="out-come">Lets Play</p>
+            <button type="button" id="play">Click To Play</button>
+        </section>
+        <section class="game-over">
+            <div class="center">
+                <h1> &#x1F62D;Game Over&#x1F62D;</h1>
+                <div class="flex">
+                    <div class="score">Final Score:</div>
+                </div>
+                <p class="lets-play">Lets Play Again</p>
+                <button type="button" id="btn"  title="Click to start">Click To Start</button>
+            </div>
+        </section>
+    </section>
+    <script src="color.js"></script>
+</body>
+</html>

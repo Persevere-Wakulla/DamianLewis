@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="logo.png" alt="">
+        <h1 class="shopping">Get Shopping.com</h1>
+        <div class="images">
+            <img class="img" src="icon-facebook.svg" alt="facebook">
+            <img class="img" src="icon-instagram.svg" alt="instagram">
+            <img class="img" src="icon-twitter.svg" alt="twitter">
+        </div>
+    </header>
+    <nav class="flex">
+    </nav>
+    <main>
+        <form class="form" action="#" method="post">
+            <fieldset class="feildset">
+                <legend>Sign Up</legend>
+                <input class="input" id="fname" type="text" placeholder="User Name" size="30px"><br>
+                <span for="password" class="center" style='font-size: 22px;'>&#128273;</span><br>
+                <input class="center" maxlength="24" id="password" type="password" placeholder="password"><br>
+                <span class="center" style='font-size:30px;'>&#128231;</span><br>
+                <input class="center" id="email" type="text" placeholder="enter your e-mail"><br>
+                <span style='font-size: 25px;'>&#128222;</span><br>
+                <input maxlength="16" type="text" name="tel" id=tel placeholder="telephone"><br>
+                <label for="male">Male</label>
+                <input required type="radio" name="gender" id="male" value="male">
+                <label for="female">Female</label>
+                <input required type="radio" name="gender" id="female" value="female"><br>
+                <input type="checkbox" name="" id="ga">
+                <label for="ga">Remember me</label><br>
+                <button id="btn"  type="submit">Sign Up</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <script type="module" src="homepage.js"></script>
+</body>
+
+</html>

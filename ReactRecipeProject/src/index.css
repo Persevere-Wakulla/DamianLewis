@@ -1,0 +1,900 @@
+* {
+    color: #ffffff;
+    margin: 0;
+}
+
+:root {
+    --nav: #003bfc;
+    --buttons: #680000;
+    --primary: #a1550d;
+    --secondary: #f6fafd;
+}
+
+body {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(pexels-pixabay-326311.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+/* Home Page */
+.container {
+    text-align: center;
+}
+
+.title-board {
+    color: #3b1803;
+    background-color: rgba(255, 255, 255, 0.363);
+
+}
+
+.title-calorie {
+    color: hwb(23 1% 77%);
+    background-color: rgba(255, 255, 255, 0.363);
+}
+
+.title-board>p {
+    font-weight: 800;
+}
+
+.title-cuisine {
+    color: #3b1803;
+    background-color: rgba(255, 255, 255, 0.452);
+}
+
+.text {
+    background: rgba(0, 0, 0, 0.397);
+    padding: 10px;
+    margin-left: 150px;
+
+    /* margin: 0 auto; */
+}
+
+.star {
+    display: inline-block;
+    color: #c0913a;
+    font-size: 50px;
+    margin-top: -50px;
+}
+
+.quote {
+    float: right;
+    width: 50%;
+    margin: 1em 0 0.5em 0.75em;
+    padding-top: .5em;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    font-size: 26px;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.quote::before {
+    content: "\0201c";
+    font-size: 66px;
+}
+
+
+.main-pic {
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.first-img {
+    width: 400px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.second-img {
+    width: 250px;
+    border-radius: 5px;
+
+}
+
+.third-img {
+    width: 320px;
+    border-radius: 5px;
+
+}
+
+.master-piece {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.the-final-master {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 46px;
+    font-family: "gabriola";
+}
+
+.artist-at-work {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 46px;
+    font-family: "gabriola";
+}
+
+.head-text {
+    margin-top: 20px;
+    font-family: "gabriola";
+    text-align: center;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.canvas {
+    text-align: center;
+}
+
+.home-cards .text {
+    text-align: justify;
+    width: 900px;
+    /* margin-left: 150px; */
+    font-family: "gabriola";
+    font-size: 30px;
+    line-height: 35px;
+}
+
+/* Recipes Page */
+.cuisines {
+    font-size: 36px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Abb Page */
+.barbecue-pic {
+    width: 200px;
+}
+
+/* About Page */
+.restaurant {
+    width: 120%;
+    padding-top: 20px;
+}
+
+.out-door {
+    width: 400px;
+    padding: 20px;
+}
+
+.deco {
+    width: 400px;
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+}
+
+.about-title {
+    font-size: 36px;
+    font-family: "gabriola";
+    font-weight: 400;
+}
+
+.about-text {
+    font-family: "gabriola";
+    background: rgba(0, 0, 0, 0.397);
+    padding: 10px;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.abt::first-letter {
+    float: left;
+    padding-top: 5px;
+    padding-right: 11px;
+    font-size: 3em;
+    line-height: 59px;
+    color: #a7704c;
+}
+
+.enable-btn {
+    color: rgba(41, 16, 2, 0.911);
+    background-color: rgba(255, 255, 255, 0.315);
+}
+
+button {
+    background-image: url(pexels-fwstudio-164005.jpg);
+    background-size: 301px;
+    font-family: "gabriola";
+    font-size: 25px;
+    font-weight: 800;
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    color: rgba(41, 16, 2, 0.911);
+    background-color: rgba(255, 254, 253, 0.281);
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header nav h1 {
+    margin-right: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 6px;
+    /* border-radius: 4px; */
+}
+
+header nav a.active {
+    border-bottom: 3px solid var(--primary);
+}
+
+/* Recipe Layout */
+.cuisines {
+    font-family: "gabriola";
+}
+
+.recipe-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+.recipe-details .details h2 {
+    color: #552301;
+    padding-top: 10px;
+}
+
+.recipe-details .details li {
+    color: #552301;
+    font-weight: 700;
+}
+
+.meal-type {
+    color: #552301;
+    font-weight: 700;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.tags {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.ingredients,
+.instruct {
+    padding-top: 10px;
+}
+
+.recipe-details .details h3 {
+    border-top: 2px solid #552301;
+    width: 330px;
+    margin: auto;
+    color: #552301;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.recipe-details .details p {
+    color: #552301;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* page content */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* help layout */
+.help-layout nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.help-layout nav a {
+    padding: 10px;
+    border: 2px solid rgba(139, 62, 11, 0.63);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.help-layout nav a:hover {
+    background-image: url(pexels-fwstudio-164005.jpg);
+    background-size: 600px;
+}
+
+.help-layout nav a.active {
+    border: 2px solid rgba(255, 255, 255, 0.63);
+    color: #4e250e;
+    font-weight: 800;
+    background-size: 600px;
+    background-image: url(pexels-fwstudio-164005.jpg);
+}
+
+.data-title {
+    border-bottom: 2px #4e250e;
+}
+
+/* faq */
+.faq .question {
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+.faq>.question {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 400px;
+    margin-left: auto;
+
+}
+
+.faq>.abbreviations {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 280px;
+
+}
+
+.brown {
+    width: 200px;
+}
+
+.dic-img {
+    width: 200px;
+    box-shadow: 2px 5px 5px rgb(85, 49, 2);
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+.measure {
+    width: 200px;
+}
+
+/* contact form */
+form {
+    margin-top: 30px;
+}
+
+form input,
+form label,
+form textarea {
+    display: block;
+}
+
+form input,
+form textarea {
+    margin-bottom: 30px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 0;
+    width: 300px;
+    /* color: var(--secondary); */
+    /* margin: 0 auto; */
+}
+
+form label span {
+    margin-bottom: 10px;
+}
+
+/* Dertails */
+.details {
+    background-image: url(pexels-fwstudio-164005.jpg);
+    background-size: 400px;
+    width: 390px;
+    color: #4e250e;
+
+}
+
+.details h2 {
+    text-align: center;
+}
+
+/* recipes list */
+.recipes>a {
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipes .background {
+    background-color: rgba(0, 0, 0, 0.062);
+    background-image: url(pexels-fwstudio-164005.jpg);
+    background-size: 800px;
+    width: 200px;
+    margin-top: 0px;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+}
+
+.recipes>img {
+    width: 100px;
+}
+
+.recipes p {
+    margin: 10px;
+}
+
+.recipes>a p:last-child {
+    font-size: 1.2em;
+
+}
+
+
+/* Recipe Details */
+.recipe-details .details h2 li {
+    color: rgb(68, 31, 0);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+/* .recipe-details .details li {
+    color: rgb(68, 31, 0);
+} */
+
+/* .recipe-details .details p {
+    color: rgb(68, 31, 0);
+} */
+
+.details .detail-img {
+    width: 310px;
+    display: flex;
+    margin: 40px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.recipes-img {
+    width: 200px;
+    box-shadow: inset 0 2px 2px hsla(24, 100%, 11%, 0.925);
+    box-shadow: 0 2px 0 hsla(24, 100%, 10%, 0.658);
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.breadcrumbs>* {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.breadcrumbs .crumb:after {
+    content: '>';
+    margin-left: 10px;
+}
+
+.breadcrumbs .crumb:first-child {
+    display: none;
+}
+
+.breadcrumbs .crumb:last-child:after {
+    display: none;
+}
+
+.breadcrumbs .crumb a {
+    color: #ddd;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.wrapper button {
+    padding: 10px 20px;
+
+}
+
+.accordian {
+    width: 500px;
+}
+
+.item {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.212);
+    background-image: url(pexels-fwstudio-164005.jpg);
+    background-size: 1000px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color: #552301;
+}
+
+.title {
+    color: #963d03;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content {
+    color: #552301;
+    font-weight: 600;
+    padding: 20px;
+    background-color: #ffffff25;
+}
+
+span {
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+}
+
+/* measure */
+.measure-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.measure-head {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.center {
+    text-align: justify;
+    padding-left: 60px;
+}
+
+.metric {
+    padding-bottom: 50px;
+}
+
+h3 {
+    color: #3b1a06;
+}
+
+@media(max-width: 800px) {
+
+    /* Home Page */
+    h1 {
+        text-align: center;
+    }
+
+    header>nav {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .star {
+        font-size: 30px;
+    }
+
+    .main-pic {
+        width: 100%;
+    }
+
+    .quote {
+        float: right;
+        margin: 1.25em 0 1em .25em;
+        padding-top: .5em;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .quote::before {
+        content: "\0201c";
+        font-size: 36px;
+    }
+
+    .first-img {
+        width: 200px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+
+    .second-img {
+        width: 124px;
+        border-radius: 5px;
+    }
+
+    .third-img {
+        width: 150px;
+        border-radius: 5px;
+    }
+
+    .master-piece {
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .the-final-master {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 26px;
+    }
+
+    .artist-at-work {
+        margin-top: 16px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .head-text {
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 100;
+        font-size: 30px;
+    }
+
+    .canvas {
+        text-align: center;
+    }
+
+    .home-cards>.text {
+        width: 500px;
+        font-size: 20px;
+        line-height: 25px;
+        width: 440px;
+        margin: 0 auto;
+
+    }
+
+    .filter-btn {
+        width: 90px;
+        font-size: 20px;
+    }
+
+    /* About Us */
+    .about-text {
+        padding: 7px;
+        font-size: 20px;
+        line-height: 20px;
+        width: 500px;
+    }
+
+    .about-text {
+        width: 400px;
+    }
+
+    .restaurant {
+        width: 65%;
+    }
+
+    .about-btn {
+        width: 100px;
+        font-size: 18px;
+    }
+
+    /* Recipes Page */
+    .recipes-img {
+        width: 200px;
+        box-shadow: inset 0 2px 2px hsla(24, 100%, 11%, 0.925);
+        box-shadow: 0 2px 0 hsla(24, 100%, 10%, 0.658);
+    }
+
+    .recipes .background {
+        background-size: 800px;
+        width: 200px;
+        margin-top: 0px;
+    }
+
+    /* recipe details page */
+    .recipe-details {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .detail-img {
+        align-items: center;
+        width: 60%;
+
+    }
+
+    .details {
+        width: 60%;
+    }
+
+    /* Help */
+
+    .help-layout>h2 {
+        text-align: center;
+    }
+
+    .metric {
+        font-size: 12px;
+    }
+
+    .accordian {
+        width: 350px;
+    }
+
+    .enable-btn {
+        width: 100px;
+        color: rgba(41, 16, 2, 0.911);
+        background-color: rgba(255, 255, 255, 0.315);
+    }
+
+    label {
+        margin: 0px;
+    }
+
+    .contact {
+        margin-left: 120px;
+    }
+
+    .faq {
+        text-align: justify;
+    }
+
+    .faq>.abbreviations {
+        display: flex;
+        justify-content: end;
+
+    }
+
+}
+
+@media(max-width: 375px) {
+    .head-text {
+        font-size: 25px;
+    }
+
+    .text {
+        margin-left: 0;
+
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .main-pic {
+        width: 100%;
+    }
+
+    header>nav {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    button {
+        width: 100px;
+        font-size: 15px;
+    }
+
+    .home-cards>.text {
+        width: 240px;
+        margin: auto;
+    }
+
+    /* About Us */
+    .about-text {
+        font-size: 16px;
+        line-height: 20px;
+        width: 300px;
+    }
+
+    .restaurant {
+        width: 45%;
+    }
+
+    .about-btn {
+        width: 100px;
+        font-size: 16px;
+    }
+
+    /* Recipe Details */
+    .details {
+        margin: auto;
+    }
+
+    .details > .detail-img {
+   width: 60%;
+    }
+    .recipe-details .details h3 {
+        border-top: 2px solid #552301;
+        width: 150px;
+
+    }
+    
+
+    /* Help */
+    .accordian {
+        width: 250px;
+    }
+
+    .flex-container {
+        width:30%;
+        font-size: 10px;
+    }
+    .center{
+        color: black;
+        width: 40%;
+    }
+
+    nav {
+        text-align: center;
+        display: flex;
+        gap: 10px;
+    }
+
+    .faq>.question {
+        width: 300px;
+    }
+
+    /* .faq > */
+    .abbreviations {
+        margin-left: 220px;
+        /* color: black; */
+
+    }
+
+    .contact {
+        /* text-align: center; */
+        margin-left: auto;
+    }
+}

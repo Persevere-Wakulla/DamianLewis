@@ -1,0 +1,65 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.container {
+    background-color: rgb(9, 158, 228);
+    width: 600px;
+}
+
+.h3 {
+    text-align: center;
+    font-size: 27px;
+}
+
+
+.body {
+    text-align: justify;
+    padding: 20px;
+}
+
+.tag {
+    text-align: center;
+    font-weight: 800;
+}
+
+.likes {
+    text-align: center;
+    padding: 20px;
+}
+
+.noData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+}

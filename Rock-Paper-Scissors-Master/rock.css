@@ -1,0 +1,360 @@
+:root{ 
+- Scissors Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%)
+- paper-gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%)
+- Rock Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%)
+-Lizard Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%)
+- Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%)}
+   
+
+
+body{
+    background-color: hsl(237, 49%, 15%);
+    background-image: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    
+}
+.main-container{
+    margin-top: 40px;
+}
+.sub-container{
+    margin: 0 auto;
+    /* width: min-content; */
+    position: relative;
+    width: min-content;
+}
+.image-container{
+    /* display: none; */
+
+}
+.logo{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2em;
+
+}
+
+#score-input{
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+.score{
+    padding: 10px 40px 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1cqb; */
+    font-weight: 500px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color:hsl(229, 64%, 46%);
+}
+#score2{
+    
+    color: hsl(229, 25%, 31%);
+    font-weight: 500px;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+#score{
+    
+    /* /* color: hsl(229, 25%, 31%); */
+    /* font-size: 15px; */ 
+}
+.head{
+    margin-top: 40px;
+    padding: 40px, 40px;
+    margin: auto;
+    /* text-align: center; */
+    width: 85%;
+    border: 4px solid hsl(217, 16%, 45%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.triangle{
+    position: relative;
+    top: 200px;
+    left: 0;
+   
+    
+}
+.paper2{
+    padding: 2rem;
+    position: absolute;
+    left: -3rem;
+    top: 9rem;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border:1rem solid hsl(230, 89%, 62%);
+
+}
+.paper2:hover{
+    border-color: rgb(31, 53, 252);
+    transition-duration: 1s;
+}
+
+.paper2:hover{
+    background: linear-gradient(
+        217deg,
+        rgb(255 0 0 / 80%),
+        rgba(109, 255, 218, 0) 70.71%
+        ), linear-gradient(127deg, rgba(2, 60, 248, 0.8), rgb(0 255 0 / 0%) 70.71%),
+        linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
+        transition-duration: 2s;
+  }
+
+.scissors2{
+    padding: 2rem;
+    position: absolute;
+    top: 9rem;
+    right: -3rem;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border: 1rem solid hsl(39, 89%, 49%);
+}
+.scissors2:hover{
+    border-color: rgb(248, 143, 6);
+    transition-duration: 1s;
+}
+.scissors2:hover{
+    background: linear-gradient(
+        217deg,
+        rgb(255 0 0 / 80%),
+        rgba(109, 255, 218, 0) 70.71%
+        ), linear-gradient(127deg, rgb(255, 251, 0), rgb(0 255 0 / 0%) 70.71%),
+        linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
+        transition-duration: 2s;
+  }
+.rock2{
+    padding: 2rem;
+    position: absolute;
+    top: 25rem;
+    left: 6.5rem;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border: 1rem solid hsl(349, 71%, 52%);
+}
+.rock2:hover{
+    border-color: red;
+    transition-duration: 1s;
+}
+
+.rock2:hover{
+    background: linear-gradient(
+        217deg,
+        rgb(255 0 0 / 80%),
+        rgba(109, 255, 218, 0) 70.71%
+        ), linear-gradient(127deg, rgba(255, 60, 0, 0.8), rgb(0 255 0 / 0%) 70.71%),
+        linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
+        transition-duration: 2s;
+  }
+
+.btn{
+    position: absolute;
+    top: 47rem;
+    left: 6.5rem;
+    background: hsl(237, 49%, 15%);
+    border: 3px solid hsl(217, 42%, 79%);
+    font-weight: 700;
+    font-size: 25px;
+    color:hsl(217, 42%, 79%);
+    margin-bottom: 2em;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 50px,
+        rgb(255 127 0 / 25%) 50px,
+        rgb(255 127 0 / 25%) 56px,
+        transparent 56px,
+        transparent 63px,
+        rgb(255 127 0 / 25%) 63px,
+        rgb(255 127 0 / 25%) 69px,
+        transparent 69px,
+        transparent 116px,
+        rgb(255 206 0 / 25%) 116px,
+        rgb(255 206 0 / 25%) 166px
+      ), repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 50px,
+        rgb(255 127 0 / 25%) 50px,
+        rgb(255 127 0 / 25%) 56px,
+        transparent 56px,
+        transparent 63px,
+        rgb(255 127 0 / 25%) 63px,
+        rgb(255 127 0 / 25%) 69px,
+        transparent 69px,
+        transparent 116px,
+        rgb(255 206 0 / 25%) 116px,
+        rgb(255 206 0 / 25%) 166px
+      ), repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 5px,
+        rgb(143 77 63 / 25%) 5px,
+        rgb(143 77 63 / 25%) 10px
+      ), repeating-linear-gradient(45deg, transparent, transparent 5px, rgb(
+            143 77 63 / 25%
+          ) 5px, rgb(143 77 63 / 25%) 10px);
+  
+    background: repeating-linear-gradient(
+        90deg,
+        transparent 0 50px,
+        rgb(255 127 0 / 25%) 50px 56px,
+        transparent 56px 63px,
+        rgb(255 127 0 / 25%) 63px 69px,
+        transparent 69px 116px,
+        rgb(255 206 0 / 25%) 116px 166px
+      ), repeating-linear-gradient(
+        0deg,
+        transparent 0 50px,
+        rgb(255 127 0 / 25%) 50px 56px,
+        transparent 56px 63px,
+        rgb(255 127 0 / 25%) 63px 69px,
+        transparent 69px 116px,
+        rgb(255 206 0 / 25%) 116px 166px
+      ), repeating-linear-gradient(
+        -45deg,
+        transparent 0 5px,
+        rgb(143 77 63 / 25%) 5px 10px
+      ), repeating-linear-gradient(45deg, transparent 0 5px, rgb(143 77 63 / 25%) 5px
+          10px);
+          color: white;
+          transition-duration: 1.4s;
+
+}     
+
+
+.section2{
+    position: relative;
+    top: 90px;
+    left: 31px;
+    text-align: center;
+}
+.play-again{
+   font-weight: 700;
+    font-size: 16px;
+    color:hsl(214, 47%, 23%);
+    margin-bottom: 2em;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+
+}
+.play-again:hover{
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 50px,
+        rgb(255 127 0 / 25%) 50px,
+        rgb(255 127 0 / 25%) 56px,
+        transparent 56px,
+        transparent 63px,
+        rgb(255 127 0 / 25%) 63px,
+        rgb(255 127 0 / 25%) 69px,
+        transparent 69px,
+        transparent 116px,
+        rgb(255 206 0 / 25%) 116px,
+        rgb(255 206 0 / 25%) 166px
+      ), repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 50px,
+        rgb(255 127 0 / 25%) 50px,
+        rgb(255 127 0 / 25%) 56px,
+        transparent 56px,
+        transparent 63px,
+        rgb(255 127 0 / 25%) 63px,
+        rgb(255 127 0 / 25%) 69px,
+        transparent 69px,
+        transparent 116px,
+        rgb(255 206 0 / 25%) 116px,
+        rgb(255 206 0 / 25%) 166px
+      ), repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 5px,
+        rgb(143 77 63 / 25%) 5px,
+        rgb(143 77 63 / 25%) 10px
+      ), repeating-linear-gradient(45deg, transparent, transparent 5px, rgb(
+            143 77 63 / 25%
+          ) 5px, rgb(143 77 63 / 25%) 10px);
+  
+    background: repeating-linear-gradient(
+        90deg,
+        transparent 0 50px,
+        rgb(255 127 0 / 25%) 50px 56px,
+        transparent 56px 63px,
+        rgb(255 127 0 / 25%) 63px 69px,
+        transparent 69px 116px,
+        rgb(255 206 0 / 25%) 116px 166px
+      ), repeating-linear-gradient(
+        0deg,
+        transparent 0 50px,
+        rgb(255 127 0 / 25%) 50px 56px,
+        transparent 56px 63px,
+        rgb(255 127 0 / 25%) 63px 69px,
+        transparent 69px 116px,
+        rgb(255 206 0 / 25%) 116px 166px
+      ), repeating-linear-gradient(
+        -45deg,
+        transparent 0 5px,
+        rgb(143 77 63 / 25%) 5px 10px
+      ), repeating-linear-gradient(45deg, transparent 0 5px, rgb(143 77 63 / 25%) 5px
+          10px);
+          color: white;
+          transition-duration: 1.4s;
+  }
+.who-win{
+    color: white;
+    font-size: 45px;
+    font-family: sans-serif ;
+}
+.section{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    /* display: none; */
+}
+h2{
+    color: aliceblue;
+}
+.circle1{
+    background-color:  rgb(3, 3, 68, 0.253);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+.circle2{
+    background-color: rgba(3, 3, 68, 0.253);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+
+}
+
+
+@media(min-width: 900px){
+    .btn{
+        position: absolute;
+        top: 47rem;
+        left: 30.5rem;
+    }
+}

@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%) --lgv: hsl(270, 3%, 87%) --dgv: hsl(279, 6%, 55%) --vdv: hsl(278, 68%, 11%) linear gradient (): hsl(249, 99%, 64%) to hsl(278, 94%, 30%) - Red (): hsl(0, 100%, 66%)
+}
+
+img {
+    display: block;
+}
+
+.main {
+    /* text-align: center; */
+    min-width: min-content;
+
+
+}
+
+.back {
+    /* max-width: 80%; */
+
+}
+
+.front {
+    /* max-width: 80%; */
+
+}
+
+.position {
+    background-image: url(images/bg-main-mobile.png);
+    background-size: 600px;
+    /* position: relative; */
+}
+
+.card-pin {
+    position: absolute;
+    top: 43%;
+    left: 78%;
+    color: rgb(254, 255, 254);
+}
+
+.card-back {
+    /* width: 80%; */
+    position: relative;
+    width: min-content;
+    /* outline: solid red; */
+    top: 108px;
+    left: 355px;
+
+}
+
+.card-front {
+    position: relative;
+    top: 43px;
+    left: 310px;
+    width: min-content;
+    color: white;
+    /* outline: solid red; */
+    /* width: 80%; */
+}
+
+.front,
+.back {
+    width: 300px;
+    max-width: revert;
+}
+
+.card-logo {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    /* outline: solid rgb(0, 0, 0); */
+
+}
+
+.card-number {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.card-exp {
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    color: white;
+
+}
+
+.card-name {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    color: white;
+
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 1.25em;
+}
+
+.card-n {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form {
+    text-align: center;
+    padding-top: 80px;
+}
+
+button {
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 140px 20px 140px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-align: center;
+}
+
+@media(min-width: 1025px) {
+
+header{
+    min-height: 100vh;
+}
+
+
+    .card-front {
+        position: relative;
+        top: 1%;
+        left: 30%;
+        /* max-width: max-content; */
+        color: white;
+        /* outline: solid red; */
+        width: min-content;
+    }
+
+    .card-back {
+        width: min-content;
+        position: relative;
+        /* outline: solid red; */
+        top: 52%;
+        left: 50%;
+
+    }
+
+    .front,
+    .back {
+        width: min-content;
+        max-width: revert;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .position {
+        background-image: url(images/bg-main-desktop.png);
+        /* background-repeat: no-repeat; */
+        position: relative;
+        /* right: 50px; */
+        /* top: 40px; */
+        grid-column: 3/1;
+        grid-row: 4/1;
+    }
+
+    .input {
+        padding: 10px;
+    }
+
+    .entries {
+        grid-column: 7/4;
+        grid-row: 2/4;
+    }
+
+
+
+    .card-logo {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+
+    }
+
+    .card-number {
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        font-size: 30px;
+        color: white;
+    }
+
+    .card-exp {
+        position: absolute;
+        top: 80%;
+        left: 80%;
+        color: white;
+
+    }
+
+    .card-pin {
+        position: absolute;
+        top: 45%;
+        left: 70%;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+
+
+    }
+
+    .card-name {
+        position: absolute;
+        top: 80%;
+        left: 2%;
+        font-size: 20px;
+
+    }
+
+    button {
+        background-color: hsl(278, 68%, 11%);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 120px 10px 120px;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    </style> -->
+  <link rel="stylesheet" href="rockpaper.css">
+</head>
+
+<body>
+  <section class="heading">
+    <div class="image">
+      <img src="images/logo-bonus.svg" alt="logo-bonus">
+    </div>
+    <div class="keep-score">
+      <h3 class="score-text"> Computer Score</h3>
+      <div class="score" id="comp-score-count">0</div>
+    </div>
+    <div class="keep-score">
+      <h3 class="score-text"> Player Score</h3>
+      <div class="score" id="user-score-count">0</div>
+    </div>
+  </section>
+  <main>
+    <section id="geo">
+      <!-- <img class="pentagon" src="images/bg-pentagon.svg" alt="pentagon"> -->
+      <div class="position circle lizard" id="lizard">
+        <img src="images/icon-lizard.svg" alt="lizard" class="icon">
+      </div>
+      <div class="position circle paper" id="paper">
+        <img src="images/icon-paper.svg" alt="paper" class="icon">
+      </div>
+      <div class="position circle rock" id="rock">
+        <img src="images/icon-rock.svg" alt="rock" class="icon">
+      </div>
+      <div class="position circle spock" id="spock">
+        <img src="images/icon-spock.svg" alt="spock" class="icon">
+      </div>
+      <div class="position circle scissors" id="scissors">
+        <img src="images/icon-scissors.svg" alt="scissors" class="icon">
+      </div>
+      <section class="center-pics">
+        <div id="player-container">
+          <img id="player" class="player" src="images/Untitled.png" alt="player">
+        </div>
+        <div class="text-container">
+          <img id="angry-comp" src="images/angry-cartoon-computer-monitor-and-mouse-illustration-on-white-background-vector.jpg" alt="">
+          <img id="player-pic" src="images/user-pic.png" alt="">
+          <div id="who-won" class="who-win"></div>
+          <div id="try-again" class="try-again"></div>
+        </div>
+      </section>
+    </section>
+    <section>
+      <div>
+      </div>
+    </section>
+  </main>
+
+  <section class="section">
+    <div class="the-user">
+      <div class="circle in-play" id="user-pick">
+        <img src="#" alt="user">
+      </div>
+      <h2 class="pick">YOU PICK</h2>
+    </div>
+    <!-- playerImage -->
+    <!-- <div id="player-image">
+        <div id="player-container">
+      <img id="player" class="player" src="images/Untitled.png" alt="player">
+    </div>
+    <div class="text-container">
+      <img id="angry-comp" src="images/angry-cartoon-computer-monitor-and-mouse-illustration-on-white-background-vector.jpg" alt="">
+      <img id="player-pic" src="images/user-pic.png" alt="">
+      <div id="who-won" class="who-win"></div>
+    </div>
+    </div> -->
+    <div class="the-house">
+      <div class="circle in-play" id="computer-pick">
+        <img src="#" alt="comp">
+      </div>
+      <h2 class="pick">HOUSE PICK</h2>
+    </div>
+  </section>
+
+  <section class="section2">
+    <div>
+      <button type="button" popovertarget="mypopover" class="btn">RULES</button>
+      <div popover id="mypopover">
+      </div>
+    </div>
+    <div>
+      <button id="reset" class="btn" type="button">PLAY AGAIN</button>
+    </div>
+  </section>
+  <script type="module" src="rock.js"></script>
+</body>
+</html>

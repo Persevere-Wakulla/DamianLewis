@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="log-in.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="logo.png" alt="">
+        <h1 class="shopping">Get Shopping.com</h1>
+        <div class="images">
+            <img src="icon-facebook.svg" alt="facebook">
+            <img src="icon-instagram.svg" alt="instagram">
+            <img src="icon-twitter.svg" alt="twitter">
+        </div>
+    </header>
+    <nav class="flex">
+    </nav>
+    <main>
+        <form class="form" action="#" method="post">
+            <fieldset class="feildset">
+                <legend>Sign Up</legend>
+                <input id="username" class="input" type="text" placeholder="User Name" size="30px"><br>
+                <span id="passwordSp" for="password" class="center" style='font-size: 22px;'>&#128231;</span><br>
+                <input class="input" id="email" type="text" placeholder="E-mail" size="30px"><br>
+                <span for="password" class="center" style='font-size: 22px;'>&#128273;</span><br>
+                <input class="center" maxlength="24" id="password" type="password" placeholder="password"><br>
+                <input type="checkbox" name="" id="ga">
+                <label for="remem">Remember me</label><br>
+                <button id="btn" type="submit">Log In</button>
+            </fieldset>
+        </form>
+        <div id="cart" class="cart-container"></div>
+    </main>
+    <script type="module" src="homepage.js"></script>
+</body>
+</html>

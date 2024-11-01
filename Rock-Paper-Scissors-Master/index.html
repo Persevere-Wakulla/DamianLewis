@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Score
+  Rules
+  You Picked
+  The House Picked
+You Win
+  You Lose
+
+  Play Again -->
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    </style> -->
+    <link rel="stylesheet" href="rock.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="body-container">
+      <div class="head">
+        <div class="logo">
+        <img src="images/logo.svg" alt="log">
+        </div>
+        <div id="score-input">
+            <div id="score" class="score">SCORE<span id="score2">0</span></div>
+        </div>
+      </div>
+      <div class="sub-container">
+        <div class="image-container">
+          <img class="triangle" src="images/bg-triangle.svg" alt="triangle">
+          <img id="paper" class="paper2" src="images/icon-paper.svg" alt="icon-paper">
+          <img id="rock" class="rock2" src="images/icon-rock.svg" alt="icon-rock">
+          <img id="scissors" class="scissors2" src="images/icon-scissors.svg" alt="icon-scissors">
+        </div>
+        <div>
+          <button type="button" popovertarget="mypopover" class="btn">RULES</button>
+          <div popover id="mypopover"><img src="./images/image-rules.svg"></div>
+        </div>
+        <!-- <img src="images/image-rules.svg" alt="rules"> -->
+      </div>
+    </div>
+    <section class="section">
+      <div class="the-user">
+        <img id="user-pick" class="circle1">
+        <div id="you-pick"><h2>YOU PICKED</h2></div>
+      </div>
+      <div class="the-house">
+        <img id="computer-pick" class="circle2">
+        <div id="house-pick"><h2>THE HOUSE PICKED</h2></div>
+      </div>
+    </section>
+  </div>
+  <!-- results containerf -->
+
+  <section class="section2">
+<div id="outcome" class="who-win"></div>
+<button id="reset-1" class="play-again">PLAY AGAIN</button>
+  </section>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Damian Lewis</a>.
+    </div> -->
+    <script src="./rocks.js"></script>
+  </body>
+  </html>

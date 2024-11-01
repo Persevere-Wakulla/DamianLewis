@@ -1,0 +1,332 @@
+:root {
+  --clr-bcg: hsl(235, 21%, 11%);
+  --clr-font: hsl(234, 39%, 85%);
+  --clr-primary: hsl(235, 24%, 19%);
+  --clr-grey: #555;
+}
+
+.light-theme {
+  --clr-bcg: hsl(236, 33%, 92%);
+  --clr-font: black;
+  --clr-primary: hsl(0, 0%, 98%);
+  --clr-grey: hsl(236, 9%, 61%);
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  background-color: var(--clr-bcg);
+  height: 100vh;
+
+}
+
+.top-input {
+  display: grid;
+  justify-content: center;
+
+}
+
+#myInput {
+  height: 3rem;
+  width: 37rem;
+  color: var(--clr-font);
+  background-color: var(--clr-primary);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+
+.dark h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1rem;
+}
+
+.dark {
+  display: flex;
+  margin-top: 8rem;
+  gap: 28rem;
+  margin-bottom: 1rem;
+
+}
+
+
+.dark-top {
+  background: url(./images/bg-desktop-dark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+
+}
+
+.light-top {
+  background: url(./images/bg-desktop-light.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.bottom-header {
+  background-color: var(--clr-primary);
+  display: flex;
+  width: 40rem;
+  height: 2rem;
+  justify-content: space-between;
+  padding: .5rem;
+
+}
+
+section {
+  display: grid;
+  justify-content: center;
+
+
+}
+
+.flex {
+  display: flex;
+}
+
+.bottom-header p {
+  display: grid;
+  align-items: center;
+  color: var(--clr-font);
+  font-size: 12px;
+}
+
+.bottom-header {
+  position: relative;
+  bottom: 2rem;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#items-left {
+  color: #555;
+}
+
+#items-left:hover {
+  color: var(--clr-grey);
+}
+
+.all {
+  color: blue;
+}
+
+.bottom-header a {
+  color: #555;
+  text-decoration: none;
+  display: grid;
+  font-size: 12px;
+}
+
+.bottom-header a:hover {
+
+  color: crimson;
+}
+
+.drag {
+  text-align: center;
+}
+
+.drag p {
+  color: #555;
+}
+
+
+
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 16px 8px 16px 2rem;
+  background: #b8adad;
+  border-bottom: 1px solid hsl(0, 0%, 75%);
+  font-size: 16px;
+  transition: 0.2s;
+  width: 40rem;
+  list-style: none;
+  background-color: var(--clr-primary);
+  color: var(--clr-font);
+  bottom: 2rem;
+
+
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
+/* Darker background-color on hover */
+ul li:hover {
+  color: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+
+ul li.checked::before {
+
+  content: '';
+  position: absolute;
+  border-color: #b41c1c;
+  border-style: solid;
+  border-radius: 0;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 12px;
+  transform: rotate(45deg);
+  height: 18px;
+  width: 10px;
+
+}
+
+/* Style the close button */
+.close {
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+  border-radius: 50%;
+}
+
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: var(--clr-primary);
+  color: var(--clr-grey);
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.addBtn:hover {
+  color: #bbb;
+}
+
+
+.bottom-center {
+  display: flex;
+  gap: 10px;
+}
+
+@media(max-width: 375px) {
+  .light-top {
+    background: url(./images/bg-mobile-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+
+  .dark-top {
+    background: url(./images/bg-mobile-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px
+  }
+
+  ul li {
+    width: 20rem;
+
+  }
+
+  .bottom-header {
+    width: 20rem;
+    height: 3rem;
+    padding: 1rem;
+
+  }
+
+  #myInput {
+    width: 17rem;
+
+
+  }
+
+  .addBtn {
+    width: 16%;
+  }
+
+  .dark {
+    gap: 5px;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+  }
+
+  .dark h1 {
+    font-size: 28px;
+  }
+
+  .bottom-center {
+    position: absolute;
+    top: 4rem;
+    color: white;
+    width: 20rem;
+    height: 3rem;
+    margin-left: 0;
+    right: .05rem;
+    background-color: var(--clr-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+  }
+
+  .bottom-center a {
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: bold;
+  }
+
+  .drag {
+    margin-top: 3rem;
+  }
+}

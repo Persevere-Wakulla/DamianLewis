@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(42, 43, 43);
+}
+.body{
+    /* margin: 0 auto; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    width: 500px;
+    padding-bottom: 20px;
+}
+.outter-body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 200px;
+    /* width: 200px; */
+    background-color: rgb(49, 49, 49);
+
+}
+
+.game-over{
+    display: none;
+    background-color: red;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    /* padding-bottom: 20px; */
+}
+.lets-play{
+ color: blue;
+ font-size: 22px;
+ font-weight: 700;   
+}
+
+#hex-color{
+    color: rgb(2, 114, 212);
+    font-weight: 800;
+}
+span{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    
+}
+#out-come{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(245, 0, 102);
+    color: rgb(61, 25, 219);
+    font-weight: 800;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.score{
+    color: aliceblue;
+    display: flex;
+    gap: 3px;
+   
+}
+.time{
+    color: aliceblue;
+    display: flex;
+    gap: 3px;
+    
+}
+.flex{
+    display: flex;
+    gap: 210px;
+    justify-content: space-between ;
+}
+div{
+    /* width: fit-content; */
+    margin: 0 auto;
+}
+#choices{
+cursor: pointer;
+}
+
+h1{
+    font-size: 30px;
+    color: rgb(4, 105, 136);
+        padding-top: 20px;
+}
+h3{
+    color: rgb(190, 0, 32);
+}
+button{
+    background-color: blue;
+    color: antiquewhite;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}

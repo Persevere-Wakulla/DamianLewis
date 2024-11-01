@@ -1,0 +1,246 @@
+* {
+    margin: auto 0;
+    /* outline: 2px solid red; */
+}
+
+section {
+    background-image: url(assets/technology/background-technology-mobile.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+.selected {
+    border-bottom: 3px solid #FFFFFF;
+    padding-bottom: 20px;
+}
+
+span {
+    color: #828385;
+}
+
+.center {
+    text-align: center;
+}
+
+.flex-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+.logo {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.flex-nums {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+    justify-content: center;
+}
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    margin-top: 30px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+
+}
+
+.circles:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+li {
+    display: flex;
+    display: none;
+    color: #FFFFFF;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    gap: 80px;
+    display: none;
+    margin-top: -5px;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 30px 30px 30px
+}
+
+#close {
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+
+.capsule {
+    color: #FFFFFF;
+}
+
+.footer {
+    text-align: center;
+}
+
+p {
+    color: #828385;
+}
+
+.page-end {
+    /* max-width: 500px; */
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 40px;
+    line-height: 25px;
+}
+
+.second-pic {
+    display: none;
+}
+
+@media(min-width:600px) {
+    .body {
+        background-image: url(assets/technology/background-technology-tablet.jpg);
+        background-size: cover;
+        height: 100vh;
+
+    }
+
+    .close {
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        display: inline-block;
+    }
+
+    
+    .nav {
+        display: flex;
+        gap: 2rem;
+        background-color: #232324bb;
+        list-style: none;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 20px;
+        margin-top: 0px;
+    }
+    
+    .nav a {
+        font-size: large;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    .nav a:hover {
+        border-bottom: 3px solid #FFFFFF;
+        padding-bottom: 20px;
+    }
+    
+    .center {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+        
+    }
+    
+    .page-end {
+        text-align: center; 
+         padding: 0px;
+        margin: 0px;
+    }
+
+}
+
+@media(min-width:800px) {
+    .body {
+        background-image: url(assets/technology/background-technology-desktop.jpg);
+        height: 100vh;
+        background-size: cover;
+    }
+    
+    span {
+        display: inline-block;
+        color: #FFFFFF;
+    }
+    
+    #first-pic {
+        display: none;
+    }
+    
+    span {
+        display: none;
+    }
+    .second-pic {
+        display: block;
+    }
+
+    #pic2 {
+        height: 300px;
+        width: 300px;
+        margin-top: 100px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        text-align: justify;
+        /* margin-top: 80px; */
+        padding-left: 20px;
+    }
+
+    .flex-all {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .flex-nums {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        /* margin-top: px; */
+        gap: 25px;
+        /* padding-top: px; */
+    }
+
+    .p {
+        width: 700px;
+    }
+ 
+}

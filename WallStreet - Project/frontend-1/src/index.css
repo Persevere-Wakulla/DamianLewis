@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  background-color: black;
+  color: aliceblue;
+}
+
+.box{
+    background-color: rgb(77, 77, 77);
+    width: 50px;
+    height: 35px;
+    text-align: center;
+  }
+  .trash:hover{
+    background-color: rgb(233, 0, 0);
+  }
+  .edit:hover{
+    background-color: rgb(0, 192, 42);
+  }
+  .lesson{
+    background-color: rgb(112, 0, 0);
+    height: 100vh;
+  }
+ .show-lesson{
+  background-color: #68000000;
+}
+.create-lesson-header{
+  background-color: #680000;
+}
+.back{
+  background-color: #68000000;
+}
+.test {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font-weight: 600;
+}

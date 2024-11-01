@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="speed-typer.css">
+</head>
+<body>
+    <section>
+        <header>
+            <div class="difficulty">
+                <label for="difficulty" class="label">Difficulty</label>
+                <select id="difficulty">
+                    <option value="">Select Level</option>
+                    <!-- value is same as id -->
+                    <option id="easy" value="easy">Easy</option>
+                    <option id="medium" value="medium">Medium</option>
+                    <option id="hard" value="hard">Hard</option>
+                </select>
+            </div>
+        </header>
+        <section class="body">
+            <div class="game-container">
+                <div class="title">
+                    <div class="speed-type-hd">
+                        <p class="jump"> &#129302;</p>
+                        <h1 class="title1">Speed Typer</h1>
+                        <p class="jump"> &#129302;</p>
+                    </div>
+                    <div class="flex">
+                        <p>Time left: <span id="timer">15</span>s</p>
+                        <p>Score: <span id="score-count">0</span></p>
+                    </div>
+                </div>
+                <div>
+                    <p class="title">Type the following:</p>
+                    <div class="flex2">
+                        <div id="word-display">Select Level to Play</div>
+                        <input class="input" id="user-input" type="text" placeholder="Type the word here..." size="30px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-over">
+                <div class="over">
+                    <h1 class="time-out">Time ran out</h1>
+                </div>
+                <h3 class="time-out1">Your Final Score Is: <span id="final-score">0</span></h3>
+                <button type="button" id="btn">Reload</button>
+            </div>
+        </section>
+    </section>
+    <script type="module" src="./speed-typer.js"></script>
+</body>
+</html>

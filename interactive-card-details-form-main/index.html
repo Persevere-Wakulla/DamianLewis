@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="grid">
+    <header class="position">
+      <div class="card-back">
+      <img class="back" src="images/bg-card-back.png" alt="card-back">
+      <p class="card-pin">000</p>
+    </div>
+    <div class="card-front">
+      <img class="front" src="images/bg-card-front.png" alt="card-front">
+      <img class="card-logo" src="images/card-logo.svg" alt="card-logo">
+      <p id="display-card-number" class="card-number">0000 0000 0000 0000</p>
+      <p id="display-name" class="card-name">Jane Appleseed</p>
+      <p class="card-exp">00/00</p>
+    </div>
+  </header>
+  <div class="entries">
+    <section>
+      <form id="form" action="">
+        <div class="top-form">
+          <div class="name">
+            <label for="input">CARDHOLDER NAME</label><br>
+            <input id="input" type="text" name="name" size="40" placeholder="e.g. Jane Appleseed"><br>
+          </div>
+          <div class="card-n">
+            <label for="c-number">CARD NUMBER</label><br>
+            <input type="text" id="c-number" name="c-number" size="40" placeholder="e.g. 1234 5678 9123 0000"><br>
+          </div>
+        </div>
+        <div class="flex">
+          <div>
+            <label for="exp-d">Exp. Date</label><br>
+            <input type="text" id="exp-d" name="exp-d" size="5" placeholder="MM">
+          </div>
+          <div>
+            <label for="mm-yy">(MM/YY)</label><br>
+            <input type="text" id="mm-yy" name="mm-yy" size="5" placeholder="YY">
+          </div>
+          <div>
+            <label for="cvc">CVC</label><br>
+            <input type="text" id="cvc" name="cvc" size="8" placeholder="e.g. 123">
+          </div>
+        </div>
+        <div class="btn">
+          <button id="confirm">Confirm</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</section>
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+    We've added your card details
+  Continue -->
+    <script src="./interactiveCard.js"></script>
+</body>
+
+</html>

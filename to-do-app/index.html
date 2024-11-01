@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Todo app</title>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="dark-top">
+      <div class="top-input">
+        <div class="dark ">
+          <h1>TODO</h1>
+          <a href="#">
+            <img onclick="switchMode(event)" id="mode-switch" src="./images/icon-sun.svg" alt="moon">
+          </a>
+        </div>
+        <div class="flex">
+          <input type="text" id="myInput" placeholder="To do list...">
+          <span onclick="newElement(event)" class="addBtn">Add</span>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="list">
+        <ul id="myUL"></ul>
+        <div class="bottom-header">
+          <p id="items-left"></p>
+          <div class="bottom-center">
+            <a id="all" href="#"><span class="all">All</span></a>
+            <a id="active" href="#">Active</a>
+            <a id="completed" href="#">Completed</a>
+          </div>
+          <a id="clear" href="#">Clear completed</a>
+        </div>
+      </div>
+    </section>
+    <div class="drag">
+      <p>Drag and drop to reorder list</p>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
